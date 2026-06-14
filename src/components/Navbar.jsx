@@ -91,7 +91,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             onClick={closeMenu}
           >
-            @sarveshh.ai ↗
+            @sharath_018 ↗
           </a>
         </div>
       </div>
