@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const { pathname } = useLocation();
@@ -18,20 +18,26 @@ export default function Navbar() {
         {/* Desktop links */}
         <div className="nav-links">
           <NavLink
-            className={({ isActive }) => `hoverable${isActive ? ' nav-active' : ''}`}
+            className={({ isActive }) =>
+              `hoverable${isActive ? " nav-active" : ""}`
+            }
             to="/"
             end
           >
             Home
           </NavLink>
           <NavLink
-            className={({ isActive }) => `hoverable${isActive ? ' nav-active' : ''}`}
+            className={({ isActive }) =>
+              `hoverable${isActive ? " nav-active" : ""}`
+            }
             to="/about"
           >
             About
           </NavLink>
           <NavLink
-            className={({ isActive }) => `hoverable${isActive ? ' nav-active' : ''}`}
+            className={({ isActive }) =>
+              `hoverable${isActive ? " nav-active" : ""}`
+            }
             to="/projects"
           >
             Projects
@@ -49,7 +55,7 @@ export default function Navbar() {
 
         {/* Mobile menu toggle */}
         <button
-          className={`nav-toggle hoverable ${isOpen ? 'open' : ''}`}
+          className={`nav-toggle hoverable ${isOpen ? "open" : ""}`}
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -60,10 +66,12 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile nav overlay */}
-      <div className={`mobile-nav-overlay ${isOpen ? 'open' : ''}`}>
+      <div className={`mobile-nav-overlay ${isOpen ? "open" : ""}`}>
         <div className="mobile-nav-links">
           <NavLink
-            className={({ isActive }) => `mobile-nav-link hoverable${isActive ? ' active' : ''}`}
+            className={({ isActive }) =>
+              `mobile-nav-link hoverable${isActive ? " active" : ""}`
+            }
             to="/"
             end
             onClick={closeMenu}
@@ -71,14 +79,18 @@ export default function Navbar() {
             Home
           </NavLink>
           <NavLink
-            className={({ isActive }) => `mobile-nav-link hoverable${isActive ? ' active' : ''}`}
+            className={({ isActive }) =>
+              `mobile-nav-link hoverable${isActive ? " active" : ""}`
+            }
             to="/about"
             onClick={closeMenu}
           >
             About
           </NavLink>
           <NavLink
-            className={({ isActive }) => `mobile-nav-link hoverable${isActive ? ' active' : ''}`}
+            className={({ isActive }) =>
+              `mobile-nav-link hoverable${isActive ? " active" : ""}`
+            }
             to="/projects"
             onClick={closeMenu}
           >
@@ -86,7 +98,7 @@ export default function Navbar() {
           </NavLink>
           <a
             className="mobile-nav-cta hoverable"
-            href="https://instagram.com/sarveshh.ai"
+            href="https://instagram.com/sharath_018"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMenu}
